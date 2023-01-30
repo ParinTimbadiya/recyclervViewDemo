@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200sp"
+    android:padding="20sp"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="2sp"
+    android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/divider"
+           android:layout_width="8sp"
+           android:layout_height="0sp"
+           android:background="?attr/colorAccent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="20sp"
+            android:layout_marginStart="5sp"
+            app:layout_constraintStart_toEndOf="@+id/divider"
+            app:layout_constraintTop_toTopOf="parent" />
+    
+        <TextView
+            android:id="@+id/textBody"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            tools:text="@tools:sample/lorem/random"
+            android:layout_marginStart="5sp"
+            app:layout_constraintEnd_toEndOf="@+id/textTitle"
+            app:layout_constraintStart_toStartOf="@+id/textTitle"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle"
+            android:padding="5sp"
+            android:ellipsize="end"
+            android:layout_margin="5sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+   </soup.neumorphism.NeumorphCardView>

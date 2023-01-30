@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">recyclervViewDemo</string>
+    <string name="title">Title</string>
+    <string name="everynote">evrynote</string>
+    <string name="title2">Title</string>
+    <string name="write_a_note">Write a note...</string>
+</resources>
